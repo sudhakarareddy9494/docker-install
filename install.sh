@@ -1,12 +1,6 @@
 sudo apt update
 sudo apt-get remove needrestart -y
 sudo apt upgrade -y
-sudo apt install default-jdk -y
-sudo sed -i '3iexport JAVA_HOME=/usr/lib/jvm/java-1.11.0-openjdk-amd64' /etc/profile
-sudo sed -i '4iexport PATH=$JAVA_HOME/bin:$PATH' /etc/profile
-source /etc/profile
-sudo apt-get update
-
 sudo apt-get install -y \
     ca-certificates \
     curl \
